@@ -1,0 +1,167 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "product": "Bryggkaffe",
+      "details": "Bryggd på månadens bönor",
+      "price": "49"
+    },
+    {
+      "id": "2",
+      "product": "Caffé Doppio",
+      "details": "Bryggd på månadens bönor",
+      "price": "49"
+    },
+    {
+      "id": "3",
+      "product": "Cappucino",
+      "details": "Bryggd på månadens bönor",
+      "price": "49"
+    },
+    {
+      "id": "4",
+      "product": "Latte Macchiato",
+      "details": "Bryggd på månadens bönor",
+      "price": "49"
+    },
+    {
+      "id": "5",
+      "product": "Kaffe Latte",
+      "details": "Bryggd på månadens bönor",
+      "price": "49"
+    }
+  ],
+  "users": [
+    {
+      "username": "Hakim",
+      "email": "Hakim",
+      "isGDPR": true,
+      "id": 1
+    },
+    {
+      "username": "Game Buoy",
+      "email": "Game Gyal",
+      "isGDPR": false,
+      "id": 2
+    },
+    {
+      "username": "Noora",
+      "email": "Noora",
+      "isGDPR": false,
+      "id": 4
+    },
+    {
+      "username": "Noora",
+      "email": "Noora",
+      "isGDPR": false,
+      "id": 5
+    },
+    {
+      "username": "Noora",
+      "email": "Noora",
+      "isGDPR": false,
+      "id": 9
+    }
+  ],
+  "orders": [
+    {
+      "user": {
+        "username": "Noora",
+        "email": "Noora",
+        "isGDPR": true
+      },
+      "orderNumber": "#638f08c-7b11-fcac-cc2d-4c2b12158f",
+      "todayString": "2021/03/08",
+      "orderDetails": [
+        {
+          "id": "1",
+          "product": "Bryggkaffe",
+          "details": "Bryggd på månadens bönor",
+          "price": "49",
+          "amount": 2
+        },
+        {
+          "id": "2",
+          "product": "Caffé Doppio",
+          "details": "Bryggd på månadens bönor",
+          "price": "49",
+          "amount": 1
+        }
+      ],
+      "id": 1
+    },
+    {
+      "user": {
+        "username": "Noora",
+        "email": "Noora",
+        "isGDPR": true
+      },
+      "orderNumber": "#a2c41cb-11d-521b-53bc-ae66e83eb828",
+      "todayString": "2021/03/08",
+      "orderDetails": [
+        {
+          "id": "2",
+          "product": "Caffé Doppio",
+          "details": "Bryggd på månadens bönor",
+          "price": "49",
+          "amount": 1
+        },
+        {
+          "id": "1",
+          "product": "Bryggkaffe",
+          "details": "Bryggd på månadens bönor",
+          "price": "49",
+          "amount": 1
+        },
+        {
+          "id": "4",
+          "product": "Latte Macchiato",
+          "details": "Bryggd på månadens bönor",
+          "price": "49",
+          "amount": 2
+        },
+        {
+          "id": "5",
+          "product": "Kaffe Latte",
+          "details": "Bryggd på månadens bönor",
+          "price": "49",
+          "amount": "2"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "user": {
+        "username": "Noora",
+        "email": "Noora",
+        "isGDPR": true
+      },
+      "orderNumber": "#08417f-2c46-0312-06c8-37d7f368ba0",
+      "todayString": "2021-04-08",
+      "orderDetails": [
+        {
+          "id": "1",
+          "product": "Bryggkaffe",
+          "details": "Bryggd på månadens bönor",
+          "price": "49",
+          "amount": 1
+        },
+        {
+          "id": "2",
+          "product": "Caffé Doppio",
+          "details": "Bryggd på månadens bönor",
+          "price": "49",
+          "amount": 1
+        },
+        {
+          "id": "3",
+          "product": "Cappucino",
+          "details": "Bryggd på månadens bönor",
+          "price": "49",
+          "amount": 1
+        }
+      ],
+      "id": 3
+    }
+  ]
+}

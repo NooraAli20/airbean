@@ -1,0 +1,84 @@
+import React from 'react'
+import { Grid, Typography, Card, CardActionArea, CardMedia, CardContent, makeStyles} from '@material-ui/core'
+import headerImage from '../images/graphics-header.svg'
+import footerImage from '../images/graphics-footer.svg'
+import Navigation from './Navigation';
+
+const useStyles = makeStyles({
+    root: {
+    
+    },
+  });
+
+export default function Menu() {
+    const classes = useStyles();
+    
+    return (
+        <div>
+           <Grid
+                container justify="center"
+                alignItems="center" style={{ height : '400px', fontFamily : 'serif'}}>
+                <Grid item xs></Grid>
+                <Grid item xs={6}>
+                    <Grid item container direction="row" style={{ backgroundColor : 'rgb(243, 228, 225)'}}>
+                        <Grid item xs6> 
+                            <div><img src={headerImage} alt="React Logo" /></div>
+                        </Grid>
+                          <Navigation />
+                          <Card className={classes.root}>
+                            <CardActionArea>
+                              <CardMedia
+                                component="img"
+                                alt="Contemplative Reptile"
+                                height="140"
+                                image="/static/images/cards/contemplative-reptile.jpg"
+                                title="Contemplative Reptile"
+                              />
+                              <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                  Lizard
+                                </Typography>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                  Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+                                  across all continents except Antarctica
+                                </Typography>
+                              </CardContent>
+                            </CardActionArea>
+                            
+                          </Card>
+                        <Grid item xs={6}>
+                            <div style={{ alignContent :'flex-end', textAlign:'right'}}><img src={footerImage} alt="React Logo" /></div>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <Grid item xs></Grid>
+            </Grid>
+        </div>
+    )
+}
+
+
+
+
+
+
+                <Grid item xs={6}>
+                    <Grid item container direction="row" style={{ backgroundColor : 'rgb(56,132,109)', textAlign:'center'}}>
+                        <Grid item xs> 
+                            <div><img src={leftImage} alt="React Logo" /></div>
+                        </Grid>
+                        <Grid item xs={5}> 
+                        <Router>
+                          <Switch>
+                              <Route exact path="/" component={Landing}  />
+                              <Route exact path="/menu" component={Menu}  />
+                              <Route exact path="/about" component={About}  />
+                          </Switch>
+                        </Router>
+                        </Grid>
+
+                        <Grid item xs>
+                            <div style={{ alignContent :'flex-end', textAlign:'right'}}><img src={rightImage} alt="React Logo" /></div>
+                        </Grid>
+                    </Grid>
+                </Grid>
